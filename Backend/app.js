@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://url-shortener-mw8b.vercel.app/",
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
