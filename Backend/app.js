@@ -28,6 +28,9 @@ app.use("/api/user", userRoute);
 app.use("/api/create", shortUrl);
 app.use("/api/auth", authRoute);
 app.get("/:id", redirectFromShortUrl);
+app.get("/", (req, res) => {
+  res.send("Welcome to the URL Shortener API");
+});
 
 app.use(errorHandler);
 
