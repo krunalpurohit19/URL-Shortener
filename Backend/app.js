@@ -16,7 +16,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://link-shorten.netlify.app"],
+    origin: "https://link-shorten.netlify.app",
     credentials: true,
   })
 );
