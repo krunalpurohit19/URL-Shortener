@@ -3,6 +3,7 @@ import connectDB from "./src/config/mongo.config.js";
 import shortUrl from "./src/routes/shortUrl.route.js";
 import authRoute from "./src/routes/auth.route.js";
 import userRoute from "./src/routes/user.route.js";
+import dashboardRoute from "./src/routes/dashboard.route.js";
 import { redirectFromShortUrl } from "./src/controller/shortUrl.controller.js";
 import { errorHandler } from "./src/utils/errorHandler.js";
 import dotenv from "dotenv";
@@ -27,6 +28,7 @@ app.use(attachUser);
 app.use("/api/user", userRoute);
 app.use("/api/create", shortUrl);
 app.use("/api/auth", authRoute);
+app.use("/api/dashboard", dashboardRoute);
 app.get("/:id", redirectFromShortUrl);
 
 app.use(errorHandler);
