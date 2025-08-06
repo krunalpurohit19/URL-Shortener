@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
     baseURL: 'https://url-shortener-alpha-sand.vercel.app/api',
-    timeout: 30000, // Set a timeout for requests
+    timeout: 20000, // Set a timeout for requests
     withCredentials: true,
 });
 
