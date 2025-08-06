@@ -1,13 +1,9 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://url-shortener-beige-psi.vercel.app/api',
-    timeout: 20000, // Set a timeout for requests
+    baseURL: 'http://localhost:3000/api',
+    timeout: 10000, // Set a timeout for requests
     withCredentials: true,
-    headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-    },
 });
 
 //Response interceptor
