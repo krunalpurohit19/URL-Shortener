@@ -30,7 +30,7 @@ const DashboardPage = () => {
     const fetchDashboardData = async () => {
         try {
             setLoading(true)
-            const response = await fetch('https://url-shortener-fh8t.vercel.app/api/dashboard/stats', {
+            const response = await fetch('https://url-shortener-a7ry.onrender.com/api/dashboard/stats', {
                 method: 'GET',
                 credentials: 'include',
                 headers: {
