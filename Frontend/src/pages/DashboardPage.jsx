@@ -60,7 +60,7 @@ const DashboardPage = () => {
     // Function to copy short URL to clipboard
     const copyToClipboard = async (shortUrl) => {
         try {
-            const frontendUrl = `https://url-shortener-fh8t.vercel.app/${shortUrl}`;
+            const frontendUrl = `https://makeurlinks.vercel.app/${shortUrl}`;
             await navigator.clipboard.writeText(frontendUrl);
             // You could add a toast notification here
         } catch (err) {
