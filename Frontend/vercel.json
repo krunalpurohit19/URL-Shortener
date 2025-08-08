@@ -6,8 +6,7 @@
     },
     {
       "source": "/:shortId([a-zA-Z0-9]{7})",
-      "destination": "https://url-shortener-a7ry.onrender.com/:shortId",
-      "permanent": false
+      "destination": "https://url-shortener-a7ry.onrender.com/:shortId"
     },
     {
       "source": "/((?!api|_next|_static|favicon.ico).*)",
