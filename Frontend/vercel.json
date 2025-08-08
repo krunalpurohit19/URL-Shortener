@@ -5,7 +5,7 @@
       "destination": "https://url-shortener-a7ry.onrender.com/api/$1"
     },
     {
-      "source": "/:shortId([a-zA-Z0-9]+)",
+      "source": "/:shortId([a-zA-Z0-9]{7})",
       "destination": "https://url-shortener-a7ry.onrender.com/:shortId"
     },
     {
