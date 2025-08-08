@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:shortId([a-zA-Z0-9]{7,})",
-      "destination": "https://url-shortener-a7ry.onrender.com/:shortId",
-      "statusCode": 307
-    }
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
