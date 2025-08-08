@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from '@tanstack/react-router';
 import { createShortUrl } from '../api/shortUrl.api';
 import { useSelector } from 'react-redux';
 import { queryClient } from '../main.jsx'; // Import the queryClient from main.jsx
@@ -220,14 +219,14 @@ const UrlForm = () => {
                             >
                                 Shorten Another
                             </button>
-                            <Link
-                                to={shortUrl}
+                            <a
+                                href={shortUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className='flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium text-center'
                             >
                                 Test Link
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
