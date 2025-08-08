@@ -80,7 +80,7 @@ const UserUrl = () => {
                                 <td className="px-6 py-4">
                                     <div className="text-sm">
                                         <a
-                                            href={`https://makeurlinks.vercel.app/${url.short_url}`}
+                                            href={url.short_url}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-blue-600 hover:text-blue-900 hover:underline"
