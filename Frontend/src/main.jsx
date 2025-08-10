@@ -6,9 +6,6 @@ import { createRouter, RouterProvider } from '@tanstack/react-router'
 import { routeTree } from './routes/routeTree.js'
 import { store } from './store/store.js'
 import { Provider } from 'react-redux'
-import { inject } from '@vercel/analytics'
-
-inject()
 
 export const queryClient = new QueryClient()
 const router = createRouter({
